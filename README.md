@@ -1,8 +1,21 @@
 # stop_start_instances  
-## Automate the start and stop of EC2 instances to optimize costs using Terraform, Lambda & Eventbridge  
+## Automate the stop & start of EC2 instances to optimize costs    
 
-### Lambda runs the actual python functions that start and stop instances, while Eventbridge sets a schedule and triggers the Lambda functions at specified times. With a focus on automation and intelligent strategies, you can effectively reduce AWS expenditure without compromising performance or functionality.
+Lambda runs the actual python functions that start and stop instances, while Eventbridge sets a schedule and triggers the Lambda functions at specified times. With a focus on automation and intelligent strategies, you can effectively reduce AWS expenditure without compromise on performance or functionality.
 
 ## Prerequisites
-### - An AWS account  
-- Terraform installed on your local system
+- An AWS account  
+- Terraform installed on your local system  
+- One or more running AWS instances  
+
+## To run:  
+- Clone this repo  
+- cd into root directory 'stop_start_instances'  
+- Enter AWS instances' IDs in .py files  
+- You can edit the cron expression in eventbridge.tf to specify your time schedules  
+- terraform init
+- terraform plan
+- terraform apply
+
+## To destroy:  
+- terraform destroy  
