@@ -13,7 +13,7 @@ Lambda runs the actual python functions that start and stop instances, while Eve
 - cd into root directory 'stop_start_instances'  
 - Enter AWS instances' IDs in .py files  
 - You can edit the cron expression in eventbridge.tf to specify your time schedules  
-- terraform init
+- ```terraform init```
 - terraform plan
 - terraform apply
 
